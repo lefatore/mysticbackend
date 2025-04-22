@@ -1,5 +1,5 @@
 # 1. Base Image für Go (zum Bauen)
-FROM golang:1.21 as builder
+FROM golang:1.24.2 as builder
 
 # 2. Arbeitsverzeichnis im Container
 WORKDIR /app
