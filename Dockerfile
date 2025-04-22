@@ -31,4 +31,4 @@ ENV PORT 10000
 
 EXPOSE 10000
 
-CMD ["./pocketbase", "serve", "--http=0.0.0.0:10000", "--cors-allow-origin=*"]
+CMD ["./pocketbase", "serve", "--http=0.0.0.0:10000"]

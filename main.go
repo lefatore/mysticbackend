@@ -14,11 +14,6 @@ import (
 func main() {
     app := pocketbase.New()
 
-    app.OnBeforeServe().Add(func(e *echo.Echo) error {
-        e.Use(middleware.CORS())
-        return nil
-    })
-
     app.OnServe().BindFunc(func(se *core.ServeEvent) error {
         se.Router.GET("/{path...}", apis.Static(os.DirFS("./pb_public"), false))
         return se.Next()
