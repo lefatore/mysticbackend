@@ -7,8 +7,6 @@ import (
     "github.com/pocketbase/pocketbase"
     "github.com/pocketbase/pocketbase/apis"
     "github.com/pocketbase/pocketbase/core"
-    "github.com/labstack/echo/v4"
-    "github.com/labstack/echo/v4/middleware"
 )
 
 func main() {
